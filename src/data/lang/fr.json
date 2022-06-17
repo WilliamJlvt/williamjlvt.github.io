@@ -1,6 +1,10 @@
 {
   "title" : "Site de William",
 
-  "welcome.text" : "Bonjour Monde !",
-  "welcome.subtitle" : "On arrive bientôt..."
+  "welcome.text" : "Site en construction",
+  "welcome.subtitle" : "On arrive bientôt...",
+
+  "lang.change.text" : "Changer la langue:",
+  "lang.french.button" : "Français",
+  "lang.english.button" : "Anglais"
 }

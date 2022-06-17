@@ -2,6 +2,9 @@ const url = 'src/data/lang/';
 let languageData;
 let language;
 
+const lang_fr = "fr";
+const lang_en = "en";
+
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -14,13 +17,15 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
-function init() {
-    if (localStorage.getItem("language") == null) {
+function init(lang) {
+    if (lang != null) {
+        localStorage.setItem("language", lang);
+    } else if (localStorage.getItem("language") == null) {
         let language = navigator.language;
-        if (language.toString().includes("fr")) {
-            localStorage.setItem("language", "fr");
+        if (language.toString().includes(lang_fr)) {
+            localStorage.setItem("language", lang_fr);
         } else {
-            localStorage.setItem("language", "en");
+            localStorage.setItem("language", lang_en);
         }
     }
     language = localStorage.getItem("language");
@@ -34,13 +39,20 @@ function init() {
 
 function loadPage() {
     let collection = document.body.getElementsByTagName("*");
-    for (var element of collection) {
-        if (element.className != null && languageData[element.className] != null) {
-            element.innerHTML = languageData[element.className];
+    for (const element of collection) {
+        if (element.className != null && element.className.includes("lang=")) {
+            var key = element.className.replaceAll("lang=", "");
+            if (languageData[key] != null) {
+                element.innerHTML = languageData[key];
+            }
         }
     }
 }
 
+function changeLanguage(lang) {
+    init(lang);
+}
+
 window.onload = function () {
-    init();
+    init(null);
 }

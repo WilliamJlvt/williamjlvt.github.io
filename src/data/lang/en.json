@@ -1,6 +1,10 @@
 {
   "title" : "William's website",
 
-  "welcome.text" : "Hello World !",
-  "welcome.subtitle" : "We are coming soon..."
+  "welcome.text" : "Site under construction",
+  "welcome.subtitle" : "We are coming soon...",
+
+  "lang.change.text" : "Change the language:",
+  "lang.french.button" : "French",
+  "lang.english.button" : "English"
 }
