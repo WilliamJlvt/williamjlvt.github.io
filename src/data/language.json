@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en" : "William's website",
+    "fr" : "Site de William"
+  },
+
+  "welcome_text" : {
+    "en" : "Hello World !",
+    "fr" : "Bonjour Monde !"
+  },
+
+  "welcome_subtitle" : {
+    "en" : "We are coming soon...",
+    "fr" : "On arrive bientôt..."
+  }
+}
