@@ -36,14 +36,19 @@ function init(lang) {
         document.title = languageData["title"];
         loadPage();
     });
+    return languageData;
 }
 
 function loadPage() {
     let collection = document.body.getElementsByTagName("*");
     for (const element of collection) {
-        if (element.className != null && element.className.includes("lang ")) {
-            var key = element.className.replaceAll("lang ", "");
-            if (languageData[key] != null) {
+        if (element.className == null)
+            continue;
+        for (const attribute of element.className.split(" ")) {
+            if (!attribute.startsWith("lang="))
+                continue;
+            const key = attribute.replace("lang=", "");
+            if (languageData != null && languageData[key] != null) {
                 element.innerHTML = languageData[key];
             }
         }
@@ -52,8 +57,28 @@ function loadPage() {
 
 function changeLanguage(lang) {
     init(lang);
+    setTimeout(function() {
+        displayRepos();
+    }, 50);
 }
 
 window.onload = function () {
     init(null);
+}
+
+function getTranslation(key) {
+    if (languageData == null || languageData[key] == null) {
+        return key;
+    }
+    return languageData[key];
+}
+
+function formatDate(date) {
+    if (language === lang_fr) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString(undefined, options);
+    } else {
+        const options = { year: 'numeric', month: 'short', day: 'numeric' };
+        return date.toLocaleDateString(undefined, options);
+    }
 }

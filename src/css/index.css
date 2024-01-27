@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1 100%;
+}
+
+.profile-section h3 {
+    font-weight: unset;
+}
+
+#profilePicture {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.repo-section {
+    flex: 0 100%;
+}
+
+.repo-section h3 {
+    text-align: center;
+}
+
+.repos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#repoList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    flex: 0 1;
+    box-sizing: border-box;
+    min-width: 450px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+.lang {
+    padding: 0;
+    cursor: pointer;
+}
+
+.lang_box {
+    display: block;
+    width: 78px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.lang_button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.repoName {
+    display: flex;
+}
+
+.repoName h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.repoName img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    margin-right: 5px;
+}
+
+.repoDescription {
+    margin-top: 10px;
+}
+
+@media (min-width: 810px) {
+    .repoName h4 {
+        text-align: left;
+    }
+}

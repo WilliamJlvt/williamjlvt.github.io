@@ -1,10 +1,11 @@
 {
   "title" : "William's website",
 
-  "welcome.text" : "Site under construction",
-  "welcome.subtitle" : "We are coming soon... c:",
+  "profil.description" : "IT student at Epitech Lyon (Promo 2028)",
 
-  "lang.change.text" : "Change the language:",
-  "lang.french.button" : "French",
-  "lang.english.button" : "English"
+  "lang.french.button" : "<img src=\"assets/flags/fr.png\" alt=\"French Flag\">",
+  "lang.english.button" : "<img src=\"assets/flags/en.png\" alt=\"English Flag\">",
+
+  "repos.text" : "Some projetcts: ",
+  "repo.updated_at" : "Last update: "
 }

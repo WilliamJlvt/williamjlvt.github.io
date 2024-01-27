@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="" id="htmlTag">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="src/css/index.css"/>
-    <script src="src/script/language.js"></script>
-  </head>
-  <body>
-  <h1 class="lang welcome.text"></h1>
-  <p class="lang welcome.subtitle"></p>
-    <h3 class="lang lang.change.text"></h3>
-    <button class="lang lang.french.button" onclick="changeLanguage(lang_fr)"></button>
-    <button class="lang lang.english.button" onclick="changeLanguage(lang_en)"></button>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="src/css/index.css"/>
+  <script src="src/script/language.js"></script>
+  <script src="src/script/github.js"></script>
+</head>
+<body>
+<div class="profile-section">
+  <img src="https://avatars.githubusercontent.com/u/80533655" alt="Profile Picture" id="profilePicture">
+  <h1>William JOLIVET</h1>
+  <h3 class="lang=profil.description"></h3>
+</div>
+
+<div class="repo-section">
+  <h3 class="lang=repos.text"></h3>
+  <ul id="repoList"></ul>
+</div>
+
+<h3 class="lang lang.change.text"></h3>
+<div class="lang_box">
+  <button class="lang_button lang=lang.french.button" onclick="changeLanguage(lang_fr)"></button>
+  <button class="lang_button lang=lang.english.button" onclick="changeLanguage(lang_en)"></button>
+</div>
+
+<script>
+  fetchGitHubData(init(null));
+</script>
+</body>
 </html>
