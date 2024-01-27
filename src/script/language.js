@@ -29,7 +29,7 @@ function init(lang) {
         }
     }
     language = localStorage.getItem("language");
-    
+
     document.getElementById('htmlTag').lang = language;
     readTextFile(url + language + ".json", function(text) {
         languageData = JSON.parse(text);
