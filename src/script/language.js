@@ -29,10 +29,11 @@ function init(lang) {
         }
     }
     language = localStorage.getItem("language");
-
+    
+    document.getElementById('htmlTag').lang = language;
     readTextFile(url + language + ".json", function(text) {
         languageData = JSON.parse(text);
-        document.title = languageData["title"]
+        document.title = languageData["title"];
         loadPage();
     });
 }
@@ -40,8 +41,8 @@ function init(lang) {
 function loadPage() {
     let collection = document.body.getElementsByTagName("*");
     for (const element of collection) {
-        if (element.className != null && element.className.includes("lang=")) {
-            var key = element.className.replaceAll("lang=", "");
+        if (element.className != null && element.className.includes("lang ")) {
+            var key = element.className.replaceAll("lang ", "");
             if (languageData[key] != null) {
                 element.innerHTML = languageData[key];
             }
