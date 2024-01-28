@@ -55,7 +55,7 @@ function displayRepos() {
 
         const repoName = document.createElement('div');
         const repoNameText = document.createElement('h4');
-        repoName.classList.add('repoName');
+        repoName.classList.add('repo-name');
         if (repo.language) {
             const languageIcon = document.createElement('img');
             languageIcon.src = language_icons[repo.language];
@@ -68,7 +68,7 @@ function displayRepos() {
 
         const description = document.createElement('p');
         description.textContent = repo.description;
-        description.className = 'repoDescription';
+        description.className = 'repo-escription';
         repoBox.appendChild(description);
         if (repo.description != null)
             repoBox.appendChild(document.createElement('br'));
@@ -80,7 +80,7 @@ function displayRepos() {
         repoBox.appendChild(document.createElement('br'));
 
         const languagesDiv = document.createElement('div');
-        languagesDiv.className = 'repoLanguages';
+        languagesDiv.className = 'repo-languages';
 
         let size = 0;
         if (reposLanguage[repo.name] != null) {

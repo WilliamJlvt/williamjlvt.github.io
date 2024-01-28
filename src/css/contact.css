@@ -1,0 +1,31 @@
+.contact-section {
+    max-width: 910px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-section a {
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 0;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .contact-section a {
+        margin-bottom: 10px;
+    }
+
+}
+
+.contact-section img {
+    margin-right: 5px;
+}

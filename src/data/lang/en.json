@@ -8,6 +8,7 @@
   "lang.english.button" : "<img src=\"assets/flags/en.png\" alt=\"English Flag\">",
 
   "skills.title" : "Skills",
+  "contact.title" : "Contact",
 
   "repo.title" : "Some projects",
   "repos.updated_at" : "Last update: "

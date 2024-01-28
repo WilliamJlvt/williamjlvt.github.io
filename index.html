@@ -4,38 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="src/css/index.css"/>
+  <link rel="stylesheet" type="text/css" href="src/css/profile.css"/>
+  <link rel="stylesheet" type="text/css" href="src/css/lang.css"/>
+  <link rel="stylesheet" type="text/css" href="src/css/repositories.css"/>
+  <link rel="stylesheet" type="text/css" href="src/css/contact.css"/>
   <script src="src/script/lang.js"></script>
   <script src="src/script/github.js"></script>
 </head>
 <body>
-<div class="section profile-section">
-  <img src="https://avatars.githubusercontent.com/u/80533655" alt="Profile Picture" id="profilePicture">
-  <h1>William JOLIVET</h1>
-  <h3 class="lang=profil.description1"></h3>
-  <h3 class="lang=profil.description2"></h3>
+<div class="lang-section">
+  <div class="lang-box">
+    <button class="lang-button lang=lang.french.button" onclick="changeLanguage(lang_fr)"></button>
+    <button class="lang-button lang=lang.english.button" onclick="changeLanguage(lang_en)"></button>
+  </div>
 </div>
-
-<div class="section skills-section">
-  <h3 class="lang=skills.title"></h3>
-  <hr>
+<div class="section profile-section">
+  <img src="https://avatars.githubusercontent.com/u/80533655" alt="Profile Picture">
+  <div class="profile-text">
+    <h1>William JOLIVET</h1>
+    <h3 class="lang=profil.description1"></h3>
+    <h3 class="lang=profil.description2"></h3>
+  </div>
 </div>
 
 <div class="section repo-section">
-  <h3 class="lang=repo.title"></h3>
+  <h2 class="lang=repo.title"></h2>
   <hr>
   <ul id="repoList"></ul>
 </div>
 
-<div class="section skills-section">
-  <h3 class="lang=skills.title"></h3>
+<div class="section contact-section">
+  <h2 class="lang=contact.title"></h2>
   <hr>
-</div>
-
-<h3 class="lang lang.change.text"></h3>
-<div class="section lang-section">
-  <div class="lang_box">
-    <button class="lang_button lang=lang.french.button" onclick="changeLanguage(lang_fr)"></button>
-    <button class="lang_button lang=lang.english.button" onclick="changeLanguage(lang_en)"></button>
+  <div class="contact-box">
+    <a href="https://www.linkedin.com/in/william-jolivet-64951a24b/" target="_blank">
+      <img src="assets/logo/linkedin.svg" alt="LinkedIn Logo" class="contact-logo" width="24px"/>
+      <p>LinkedIn</p>
+    </a>
+    <a href="mailto:william.jolivet@epitech.eu" target="_blank">
+      <img src="assets/logo/email.svg" alt="Email Logo" class="contact-logo" width="24px">
+      <p>Email</p>
+    </a>
+    <a href="https://github.com/WilliamJlvt" target="_blank">
+      <img src="assets/logo/github.svg" alt="Github Logo" class="contact-logo" width="24px"/>
+      <p>GitHub</p>
+    </a>
+    <a href="assets/cv.pdf" target="_blank">
+      <img src="assets/logo/cv.svg" alt="CV" class="contact-logo" width="24px"/>
+      <p>CV</p>
+    </a>
   </div>
 </div>
 
