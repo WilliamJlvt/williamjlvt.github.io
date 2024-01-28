@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .contact-section a {
