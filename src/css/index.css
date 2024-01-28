@@ -52,14 +52,28 @@ a {
     color: inherit;
 }
 
-li {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    flex: 0 1;
-    box-sizing: border-box;
-    min-width: 450px;
+@media (min-width: 490px) {
+    li {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        flex: 0 1;
+        box-sizing: border-box;
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 490px) {
+    li {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        flex: 0 1;
+        box-sizing: border-box;
+        min-width: 90%;
+    }
 }
 
 h4 {
@@ -94,6 +108,7 @@ p {
 
 .repoName {
     display: flex;
+    justify-content: center;
 }
 
 .repoName h4 {
@@ -111,10 +126,4 @@ p {
 
 .repoDescription {
     margin-top: 10px;
-}
-
-@media (min-width: 810px) {
-    .repoName h4 {
-        text-align: left;
-    }
 }

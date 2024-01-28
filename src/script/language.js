@@ -35,6 +35,7 @@ function init(lang) {
         languageData = JSON.parse(text);
         document.title = languageData["title"];
         loadPage();
+        displayRepos();
     });
     return languageData;
 }
