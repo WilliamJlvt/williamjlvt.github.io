@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #F6F6F6;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0;
 }
 
 .profile-section {
@@ -21,11 +29,18 @@ body {
     margin-bottom: 10px;
 }
 
+.section {
+    max-width: 1380px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .repo-section {
     flex: 0 100%;
 }
 
-.repo-section h3 {
+.section h3 {
     text-align: center;
 }
 
@@ -52,26 +67,23 @@ a {
     color: inherit;
 }
 
+li {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    border-radius: 15px;
+    flex: 0 1;
+    box-sizing: border-box;
+}
+
 @media (min-width: 490px) {
     li {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 5px;
-        flex: 0 1;
-        box-sizing: border-box;
         min-width: 450px;
     }
 }
 
 @media (max-width: 490px) {
     li {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 5px;
-        flex: 0 1;
-        box-sizing: border-box;
         min-width: 90%;
     }
 }
@@ -94,8 +106,9 @@ p {
     width: 78px;
     margin: 0 auto;
     padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    background-color: #fff;
 }
 
 .lang_button {
@@ -114,7 +127,7 @@ p {
 .repoName h4 {
     font-weight: bold;
     text-align: center;
-    margin-top: 6px;
+    margin-top: 2px;
 }
 
 .repoName img {
@@ -126,4 +139,33 @@ p {
 
 .repoDescription {
     margin-top: 10px;
+}
+
+.repoLanguages {
+    display: flex;
+    margin-top: 5px;
+}
+
+.repoLanguages p {
+    margin-top: -3px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.repoLanguages img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 490px) {
+    .repoLanguages {
+        display: none;
+    }
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 2px solid #d7d7d7;
 }

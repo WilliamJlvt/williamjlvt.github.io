@@ -1,6 +1,6 @@
 const url = 'src/data/lang/';
 let languageData;
-let language;
+let lang;
 
 const lang_fr = "fr";
 const lang_en = "en";
@@ -28,10 +28,10 @@ function init(lang) {
             localStorage.setItem("language", lang_en);
         }
     }
-    language = localStorage.getItem("language");
+    lang = localStorage.getItem("language");
 
-    document.getElementById('htmlTag').lang = language;
-    readTextFile(url + language + ".json", function(text) {
+    document.getElementById('htmlTag').lang = lang;
+    readTextFile(url + lang + ".json", function(text) {
         languageData = JSON.parse(text);
         document.title = languageData["title"];
         loadPage();
@@ -75,7 +75,7 @@ function getTranslation(key) {
 }
 
 function formatDate(date) {
-    if (language === lang_fr) {
+    if (lang === lang_fr) {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         return date.toLocaleDateString(undefined, options);
     } else {

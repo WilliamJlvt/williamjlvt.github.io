@@ -4,25 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="src/css/index.css"/>
-  <script src="src/script/language.js"></script>
+  <script src="src/script/lang.js"></script>
   <script src="src/script/github.js"></script>
 </head>
 <body>
-<div class="profile-section">
+<div class="section profile-section">
   <img src="https://avatars.githubusercontent.com/u/80533655" alt="Profile Picture" id="profilePicture">
   <h1>William JOLIVET</h1>
-  <h3 class="lang=profil.description"></h3>
+  <h3 class="lang=profil.description1"></h3>
+  <h3 class="lang=profil.description2"></h3>
 </div>
 
-<div class="repo-section">
-  <h3 class="lang=repos.text"></h3>
+<div class="section skills-section">
+  <h3 class="lang=skills.title"></h3>
+  <hr>
+</div>
+
+<div class="section repo-section">
+  <h3 class="lang=repo.title"></h3>
+  <hr>
   <ul id="repoList"></ul>
 </div>
 
+<div class="section skills-section">
+  <h3 class="lang=skills.title"></h3>
+  <hr>
+</div>
+
 <h3 class="lang lang.change.text"></h3>
-<div class="lang_box">
-  <button class="lang_button lang=lang.french.button" onclick="changeLanguage(lang_fr)"></button>
-  <button class="lang_button lang=lang.english.button" onclick="changeLanguage(lang_en)"></button>
+<div class="section lang-section">
+  <div class="lang_box">
+    <button class="lang_button lang=lang.french.button" onclick="changeLanguage(lang_fr)"></button>
+    <button class="lang_button lang=lang.english.button" onclick="changeLanguage(lang_en)"></button>
+  </div>
 </div>
 
 <script>

@@ -1,11 +1,14 @@
 {
   "title" : "William's website",
 
-  "profil.description" : "IT student at Epitech Lyon (Promo 2028)",
+  "profil.description1" : "IT student at Epitech Lyon (Promo 2028)",
+  "profil.description2" : "18 years old, Auvergne-Rhône-Alpes (Lyon), France",
 
   "lang.french.button" : "<img src=\"assets/flags/fr.png\" alt=\"French Flag\">",
   "lang.english.button" : "<img src=\"assets/flags/en.png\" alt=\"English Flag\">",
 
-  "repos.text" : "Some projetcts: ",
-  "repo.updated_at" : "Last update: "
+  "skills.title" : "Skills",
+
+  "repo.title" : "Some projects",
+  "repos.updated_at" : "Last update: "
 }
