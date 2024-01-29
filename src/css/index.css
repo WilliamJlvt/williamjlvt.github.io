@@ -29,14 +29,21 @@ hr {
     margin-top: 0;
     margin-bottom: 15px;
     border: 0;
-    border-top: 2px solid #d7d7d7;
+    border-top: 2px solid #c6c6c6;
 }
 
 .section {
-    max-width: 1380px;
+    max-width: 920px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 960px) {
+    .section {
+        max-width: 450px;
+    }
+
 }
 
 .section h3 {

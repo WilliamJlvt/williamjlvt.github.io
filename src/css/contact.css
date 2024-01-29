@@ -1,5 +1,4 @@
 .contact-box {
-    max-width: 910px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -16,6 +15,7 @@
     display: flex;
     padding: 5px 10px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-section a:hover {

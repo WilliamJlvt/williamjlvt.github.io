@@ -16,7 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    gap: 20px;
 }
 
 .repo-section li {
@@ -26,6 +26,7 @@
     border-radius: 15px;
     flex: 0 1;
     box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 490px) {
